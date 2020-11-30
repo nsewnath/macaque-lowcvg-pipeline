@@ -76,6 +76,9 @@ Calculating FST per population (recommended for populations for >=5 individuals)
 	2. Make sites file to limit the SNPs analyzed to the high coverage ones
 		I filtered the .pos.gz file generated from the allele coverage analysis to include only the positions with a minimum
 		depth of 37.
+
+	###You need the .pos.gz from step 2 of the pipeline for the next step, not the pos.gz generated from the previous step
+
 			python make_angsd_sites_file.py
 		Edit the file as needed to change depth cutoff or input or output names
 		Index using angsd
