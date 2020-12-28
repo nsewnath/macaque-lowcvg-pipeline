@@ -13,9 +13,9 @@ for it to be included in the sites file - if you wish to include all SNPs, set i
 Contact: kelsey_witt_dillon@brown.edu
 """
 import gzip
-infile = "coverage_summary_min5_1mil_1p.pos.gz"
-outfile = "1mil_1p_min38_sites.txt"
-minInd = 38
+infile = "./../fst_full_genome/all_turkey_site_file.pos.gz"
+outfile = "./../fst_full_genome//all_turkey_site_file.txt"
+minInd = 46
 
 with gzip.open(infile, 'rt') as f:
     with open(outfile, 'w') as g:
