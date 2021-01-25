@@ -1,11 +1,11 @@
 import gzip
-sites_infile = "ABtest_4Cow_baseCts.counts.gz"
-pos_infile = "ABtest_4Cow_baseCts.pos.gz"
+sites_infile = "./../nj_tree/nj_backup.counts.gz"
+pos_infile = "./../nj_tree/nj_backup.pos.gz"
 
 #sites_infile = "abtest_head.counts.gz"
 #pos_infile = "abtest_snps_head.txt"
 
-outfile = "ABtest_4Cow_baseCts_pos.counts"
+outfile = "./../nj_tree/nj_backup_add_pos.counts"
 
 pf = gzip.open(pos_infile, 'rt')
 f = open(outfile, 'w')
