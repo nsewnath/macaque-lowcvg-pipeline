@@ -70,7 +70,10 @@ Make PCA and Admixture plots
 	command -admix_K N to force admixture to use N clusters. If you run multiple of these, you'll get multiple PCA results but they will all be identical.
 		python pcangsd.py -beagle file.beagle.gz -admix -o outfile -threads 4
 Calculating FST per population (recommended for populations for >=5 individuals)
-	1. Calculate per population site frequency spectra
+	1. Calculate per population site frequency spectra 
+
+	### Don't use these, go to step two and rerun with subset of bam file list 
+
 		~/programs/angsd/angsd -b pop1_bams.txt  -anc reference.fasta -out pop1 -minQ 30 -dosaf 1 -gl 1 
 		~/programs/angsd/angsd -b pop2_bams.txt  -anc reference.fasta -out pop2 -minQ 30 -dosaf 1 -gl 1 
 	2. Make sites file to limit the SNPs analyzed to the high coverage ones
